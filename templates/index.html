@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="VirginiaCreeperApp">
         <head>
                 <title>Virginia Creeper</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +10,15 @@
                         }
                 </style>
         </head>
-        <body>
+        <body ng-app="VirginiaCreeperController">
                 <div class="container">
                         <div class="row">
                                 <div class="col-sm-5 col-sm-offset-1">
                                         <h1>Virginia Creeper</h1>
                                         <br>                
-                                        <form action="/" role="form" method="post">
+                                        <form role="form" ng-submit="getResults()">
                                                 <div class="form-group">
-                                                        <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" autofocus required>
+                                                        <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" ng-model="url" required>
                                                 </div>
                                                 <button type="submit" class="btn btn-default">Return</button>
                                         </form>
@@ -55,6 +55,8 @@
                 <br><br>
                 <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
                 <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+                <script src="{{ url_for("static", filename="main.js") }}"></script>
         </body>
 </html>
         
