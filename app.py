@@ -3,6 +3,7 @@ import requests
 import operator
 import re
 import nltk
+import json
 from rq import Queue
 from rq.job import Job
 from worker import conn
@@ -80,5 +81,4 @@ def get_results(job_key):
                 return "Nay!", 202
 
 if __name__ == "__main__":
-#        print(os.environ["APP_SETTINGS"])
         app.run()
