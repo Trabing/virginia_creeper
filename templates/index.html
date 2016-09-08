@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
+                <meta charset="utf-8">
                 <title>Virginia Creeper</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -9,14 +10,16 @@
                         .container {
                                 max-width: 66vw;
                         }
-                </style>                
+                </style>
         </head>
         <body>
+                <header>
+                        <h1>Virginia Creeper</h1>
+                </header>
                 <div class="container">
                         <div class="row">
                                 <div class="col-sm-5 col-sm-offset-1">
-                                        <h1>Virginia Creeper</h1>
-                                        <br>                
+                                        <br>
                                         <form id="seeker" action="/seek" method="post" role="form">
                                                 <div class="form-group">
                                                         <input type="text" name="url" class="form-control" id="url-box" placeholder="Enter URL..." style="max-width: 300px;" autofocus required>
@@ -28,6 +31,7 @@
                                                 <h4>{{ error }}</h4>
                                         {% endfor %}
                                         <br>
+                                        <h6>Kolmogorov randomness</h6>
                                 </div>
                                 <div class="col-sm-5 col-sm-offset-1">
                                         {% if results %}
@@ -54,9 +58,8 @@
                         </div>
                 </div>
                 <br><br>
-                <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
-                <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-                <script src="{{ url_for("static", filename="js/teucer.js") }}"></script>
+                <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+                <script src="//code.jquery.com/jquery-2.2.1.min.js" type="text/javascript"></script>
+                <script src="{{ url_for("static", filename="js/teucer.js") }}" type="text/javascript"></script>
         </body>
 </html>
-        

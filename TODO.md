@@ -16,4 +16,11 @@ To do:
   (frame_grabber); images (ie. frames)(object_tracer); and
   text (ie. documents)(screen_scrapers).
 
+- Jenna mentioned CockroachDB. Sounds disgusting, but they could
+  be onto something. They're backed by Google Ventures (they're
+  ex-Googlers) and Sequoia Capital. Jenna said that she's friends
+  with the founder and that she's been trying to get him to speak
+  at Byte, for some time, now. After all, cockroaches are resilient.
+  And: I hate Postgres.
+
 - Now: sentiment analysis
